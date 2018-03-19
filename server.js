@@ -48,6 +48,7 @@ app.get('/auth/google/callback',
         failureRedirect: '/'
     }));
 
- app.listen(3000, function() {
-    console.log('Aplikacja nasłuchuje na http://localhost:3000');
+ app.listen(process.env.PORT, function() {
+     
+    console.log(`Port: ${process.env.PORT}`);
 });
